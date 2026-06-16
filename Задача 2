@@ -1,0 +1,10 @@
+let user = "student";
+let orderOwner = "Arthur"
+
+if (user === orderOwner) {
+  console.log("Редактирование разрешено");
+} else if (user === "admin") {
+  console.log("Редактирование разрешено");
+} else {
+  console.log("Заказ нельзя редактировать")
+}
