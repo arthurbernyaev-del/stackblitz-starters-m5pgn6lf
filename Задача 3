@@ -1,0 +1,22 @@
+let sum_purchases = 4000; // Пользователь покупает на 4000 рублей
+let bonus_points = 800; // На его балансе 800 баллов
+let amountof_purchases = 2; // Это его вторая покупка в этом месяце
+let standart_amount = 10; // Стандартный размер начисления в %
+let increased_amount = 20; // Повышенный размер начисления в % 
+let bonusfor_purchases = 5; // Добавки за частые покупки, в %
+
+let final_percent; // Дополнительная переменная для хранения итогового % 
+
+// Функции
+
+if (bonus_points > 5000) {
+  final_percent = increased_amount;
+} else {
+  final_percent = standart_amount;
+}
+
+if (amountof_purchases > 1) {
+  final_percent = final_percent + bonusfor_purchases;
+}
+
+console.log("Процент от покупки: " + final_percent);
