@@ -1,0 +1,16 @@
+let accountStatus = "extended";
+let username = "Пользователь";
+let cashbackPercentage;
+
+if (accountStatus === "extended") {
+  cashbackPercentage = 15;
+} else if (accountStatus === "premium") {
+  cashbackPercentage = 20;
+} else if (accountStatus === "vip") {
+  cashbackPercentage = 30;
+} else {
+  cashbackPercentage = 10;
+}
+
+console.log(`${username} ${accountStatus} аккаунта`);
+console.log(`Вы получаете ${cashbackPercentage} % с покупок на бонусный счёт`);
