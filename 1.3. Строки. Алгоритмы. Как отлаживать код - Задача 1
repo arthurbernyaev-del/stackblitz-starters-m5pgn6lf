@@ -2,6 +2,6 @@ let product = "Печенье «Юбилейное», 1 кг";
 let inBusket = true;
 let quantity = 5;
 
-if (inBusket = true) {
+if (inBusket == true) {
   console.log(quantity + " x " + product)
 }
